@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Vue试验场
-subtitle: 专注于Vue相关知识的捣鼓
-description: 用一年的时间好好捣鼓Vue
+title: Vue实验室
+subtitle: 专注于Vue相关知识的学习和分享
+description: 用一年的时间好好搞定Vue，已Vue为支点撬动前端知识体系。
 author: VioletJack
 language: zh-CN
 timezone: Asia/Shanghai
