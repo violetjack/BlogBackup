@@ -1,6 +1,7 @@
 ---
 title: Vue.js学习系列八 —— Vue源码学习之State学习
-date: 2018-02-06 16:20:52
+date: 2018-02-03
+tags: Vue.js学习系列，源码解析
 ---
 
 > 关于Vue源码学习的博客， [HcySunYang](http://hcysun.me/)的[Vue2.1.7源码学习](http://hcysun.me/2017/03/03/Vue%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0/)是我所见过讲的最清晰明了的博客了，非常适合想了解Vue源码的同学入手。本文是在看了这篇博客之后进一步的学习心得。

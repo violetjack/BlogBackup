@@ -1,6 +1,6 @@
 ---
 title: Weex控制Android返回键解决方案
-date: 2018-02-06 16:20:52
+date: 2016-06-30
 ---
 
 > 正在深入倒腾weex，希望可以将weex用在项目中。这里找出了weex控制Android返回键的方法。
