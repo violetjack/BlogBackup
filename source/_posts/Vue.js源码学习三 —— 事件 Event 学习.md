@@ -1,6 +1,7 @@
 ---
 title: Vue.js源码学习三 —— 事件 Event 学习
 date: 2018-02-17
+tag: "Vue.js源码学习"
 ---
 
 > 早上好！继续学习Vue源码~这次我们来学习 event 事件。

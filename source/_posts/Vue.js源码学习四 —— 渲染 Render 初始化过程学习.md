@@ -1,6 +1,7 @@
 ---
 title: Vue.js源码学习四 —— 渲染 Render 初始化过程学习
 date: 2018-02-19
+tag: "Vue.js源码学习"
 ---
 
 > 今天我们来学习下Vue的渲染 Render 源码~

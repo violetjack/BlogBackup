@@ -1,6 +1,7 @@
 ---
 title: Vue.js学习系列五 —— 从VUE-CLI来聊聊ESLint
 date: 2017-05-19
+tag: "Vue.js学习系列"
 ---
 
 > 最近在用vue-cli写项目的时候，经常和ESLint打交道，也算是不打不相识啦。下面总结一下在学习Vue的时候遇到的一些问题。

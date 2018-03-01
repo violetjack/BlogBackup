@@ -1,6 +1,7 @@
 ---
 title: Vue.js学习系列四 —— Webpack学习实践
-date: 2017-02-07
+date: 2017-02-19
+tag: "Vue.js学习系列"
 ---
 
 > 这两周一直想写webpack的知识点，却发现webpack其实要将webpack说的具体内容还是挺多的。而且稀土掘金上一搜webpack有好多人都有去写webpack的知识点，所以本文中不再去重复别人的东西了，就简单记录一下我对webpack的理解。并按照老规矩附上demo以及我收藏的几篇不错的webpack入门文章以供学习参考~

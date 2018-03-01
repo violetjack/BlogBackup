@@ -1,6 +1,7 @@
 ---
 title: Vue.js学习系列三 —— axios和网络传输相关知识的学习实践
 date: 2017-01-09
+tag: "Vue.js学习系列"
 ---
 
 > 在学习了之前的路由vue-router和状态管理vuex之后，就应该是网络交互了。就学习尤大推荐的axios了。刚好本人对网络请求这块除了会get、put、post和delete这四个方法之外知之甚少，刚好补全上。

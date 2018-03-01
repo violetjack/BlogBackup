@@ -1,6 +1,7 @@
 ---
 title: Vue.js学习系列七 —— Vue服务器渲染Nuxt学习
 date: 2018-01-26
+tag: "Vue.js学习系列"
 ---
 
 > 我又回来啦~这次我们来学习Vue的服务器渲染SSR。

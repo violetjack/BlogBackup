@@ -1,6 +1,7 @@
 ---
 title: Vue.js源码学习二 —— 生命周期 LifeCycle 学习
 date: 2018-02-16
+tag: "Vue.js源码学习"
 ---
 
 > 春节继续写博客~加油！

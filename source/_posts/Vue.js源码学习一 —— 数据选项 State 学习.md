@@ -1,6 +1,7 @@
 ---
 title: Vue.js源码学习一 —— 数据选项 State 学习
 date: 2018-02-03
+tag: "Vue.js源码学习"
 ---
 
 > 关于Vue源码学习的博客， [HcySunYang](http://hcysun.me/)的[Vue2.1.7源码学习](http://hcysun.me/2017/03/03/Vue%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0/)是我所见过讲的最清晰明了的博客了，非常适合想了解Vue源码的同学入手。本文是在看了这篇博客之后进一步的学习心得。

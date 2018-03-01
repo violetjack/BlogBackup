@@ -1,6 +1,7 @@
 ---
 title: Vue.js学习系列二 —— vuex学习实践笔记（附DEMO）
 date: 2016-12-31
+tag: "Vue.js学习系列"
 ---
 
 > 上次学习了vue-router的使用，让我能够在各个页面间切换，将页面搭建了起来。这次则要学习vue的状态管理模式——vuex。
