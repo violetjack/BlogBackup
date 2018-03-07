@@ -10,7 +10,7 @@ tag: "Vue.js源码学习"
 
 # renderMixin
 首先来跟一下 `renderMixin` 的代码：
-```
+```js
 export function renderMixin (Vue: Class<Component>) {
   installRenderHelpers(Vue.prototype)
 
@@ -61,7 +61,7 @@ export function renderMixin (Vue: Class<Component>) {
 ```
 源码执行了 `installRenderHelpers ` 方法，然后定义了 Vue 的 `$nextTick` 和 `_render` 方法。
 先来看看 `installRenderHelpers ` 方法：
-```
+```js
 export function installRenderHelpers (target: any) {
   target._o = markOnce
   target._n = toNumber // 数字
@@ -82,7 +82,7 @@ export function installRenderHelpers (target: any) {
 ```
 这就是 Vue 的各类渲染方法了，从字面意思中可以知道一些方法的用途，这些方法用在Vue生成的渲染函数中。具体各个渲染函数的实现先不提~之后会专门写博客学习。
 在 `$nextTick` 函数中执行了 `nextTick` 函数，找到该函数源码：
-```
+```js
 export function nextTick (cb?: Function, ctx?: Object) {
   let _resolve
   callbacks.push(() => {
@@ -138,7 +138,7 @@ export function initRender (vm: Component) {
 ```
 在 initRender 方法中，为Vue的实例方法添加了几个属性值，最后定义了 `$attrs` 和 `$listeners` 的监听方法。
 看下 `createElement` 方法：
-```
+```js
 // src/core/vdom/create-element.js
 export function createElement (
   context: Component,
@@ -161,7 +161,7 @@ export function createElement (
 ```
 这里执行了 `_createElement` 方法，由于该方法太长，就不贴出来费篇幅了，代码看[这里](https://github.com/vuejs/vue/blob/dev/src/core/vdom/create-element.js#L47)。最终返回一个 VNode 对象，VNode 对象由 `createEmptyVNode` 或 `createComponent` 方法得到的。
 `createEmptyVNode` 创建了一个空的 VNode
-```
+```js
 // src/core/vdom/vnode.js
 export const createEmptyVNode = (text: string = '') => {
   const node = new VNode()
@@ -171,7 +171,7 @@ export const createEmptyVNode = (text: string = '') => {
 }
 ```
 `createComponent` 创建了一个组件，最终也将返回一个 VNode 对象。
-```
+```js
 // src/core/vdom/create-component.js
 export function createComponent (
   Ctor: Class<Component> | Function | Object | void,
@@ -243,7 +243,7 @@ export function createComponent (
 
 # 初次渲染过程
 既然是初次渲染，肯定会触发 `mounted` 生命周期钩子。所以我们从 `mount` 找起。在源码中定义了两次 `$mount` 方法，第一次返回了 `mountComponent` 方法；第二次定义了 Vue 实例的 `$options` 选项中的一些数据，然后再执行第一次的 `$mount` 方法，即执行 `mountComponent` 方法。
-```
+```js
 // src/platforms/web/runtime/index.js
 Vue.prototype.$mount = function (
   el?: string | Element,
@@ -253,7 +253,7 @@ Vue.prototype.$mount = function (
   return mountComponent(this, el, hydrating)
 }
 ```
-```
+```js
 // src/platforms/web/entry-runtime-with-compiler.js
 const mount = Vue.prototype.$mount
 Vue.prototype.$mount = function (
@@ -299,7 +299,7 @@ Vue.prototype.$mount = function (
 ```
 这里需要注意的是 `compileToFunctions` 方法，该方法的作用是将 template 编译为 render 函数。
 `compileToFunctions` 方法是一个编译的过程，暂且不论。抓住主线，看渲染。所以去看看 `mountComponent` 方法：
-```
+```js
 // src/core/instance/lifecycle.js
 export function mountComponent (
   vm: Component,
@@ -328,7 +328,7 @@ export function mountComponent (
 }
 ```
 可以看到，在 beforeMount 和 mounted 生命周期之间的代码：创建一个更新方法，然后创建一个Watcher监听该方法。
-```
+```js
   let updateComponent = () => {
     vm._update(vm._render(), hydrating)
   }
@@ -336,7 +336,7 @@ export function mountComponent (
   new Watcher(vm, updateComponent, noop, null, true /* isRenderWatcher */)
 ```
 在 `new Watcher` 监听了 updateComponent 方法后，会立即执行 `updateComponent` 方法。在 `updateComponent` 方法中，我们之前提到 _render 方法最终返回一个编译过的 VNode 对象，即虚拟 DOM，这里我们就看看 _update 方法。
-```
+```js
   // src/core/instance/lifecycle.js
   Vue.prototype._update = function (vnode: VNode, hydrating?: boolean) {
     const vm: Component = this

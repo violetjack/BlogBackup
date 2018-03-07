@@ -13,7 +13,7 @@ tag: "Vue.js源码学习"
 ---
 既然是虚拟 DOM 的作用是转为真实的 DOM，那这就是一个渲染的过程。所以我们看看 render 方法。在之前的学习中我们知道了，vue 的渲染函数 `_render` 方法返回的就是一个 VNode 对象。而在 `initRender` 初始化渲染的方法中定义的 `vm._c` 和 `vm.$createElement` 方法中，`createElement` 最终也是返回 VNode 对象。所以 VNode 是渲染的关键所在。
 话不多说，来看看这个VNode为何方神圣。
-```
+```js
 // src/core/vdom/vnode.js
 export default class VNode {
   tag: string | void;
@@ -212,12 +212,12 @@ Vue.prototype.__patch__ = inBrowser ? patch : noop
 ```
 这里啰嗦一句，要找vue的全局方法，如 `vm.aaa` ,直接查找 `Vue.prototype.aaa` 即可。
 继续找下去：
-```
+```js
 // src/platforms/web/runtime/patch.js
 export const patch: Function = createPatchFunction({ nodeOps, modules })
 ```
 找到 `createPatchFunction` 方法~
-```
+```js
 // src/core/vdom/patch.js
 export function createPatchFunction (backend) {
   ……
@@ -320,7 +320,7 @@ export function createPatchFunction (backend) {
 ## createElm
 
 先看 `createElm` 方法，这个方法创建了真实 DOM 元素。
-```
+```js
   function createElm (
     vnode,
     insertedVnodeQueue,
