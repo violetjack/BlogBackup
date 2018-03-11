@@ -3,11 +3,15 @@ title: 关于我
 date: 2018-02-06 16:20:52
 ---
 
-VioletJack， 丁晓杰，Android、前端开发工程师。现专注于Vue相关技术的学习和分享。
+VioletJack， 丁晓杰，Android、前端开发工程师，深度 Vue.js 爱好者。现专注于Vue相关技术的学习和分享。
 
 ## 兴趣爱好
 
-看书、篮球、吉他、编程。
+看书、篮球、写作、编程。
+
+## 提供帮助
+
+如有任何 Vue.js 相关问题需要帮忙可以联系找到我。联系方式最好是通过 SF 或者 知乎 提问的方式~只要在能力范围内，一定尽力帮助解决！
 
 ## 梦想
 
@@ -19,4 +23,7 @@ VioletJack， 丁晓杰，Android、前端开发工程师。现专注于Vue相�
 
 ## 联系方式
 
-邮箱： [475966597@qq.com](475966597@qq.com)
+微博： https://weibo.com/u/2640909603
+SF：  https://segmentfault.com/u/violetjack
+知乎： https://www.zhihu.com/people/violetjack
+邮箱： https://violetjack@foxmail.com
