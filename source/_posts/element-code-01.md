@@ -1,6 +1,7 @@
 ---
 title: element源码学习一 —— 认识框架
 date: 2018-03-10
+tag: "element源码学习"
 ---
 
 > 由于面试需要，先来几发 element 源码学习博客。Vue 源码还将继续更新。
@@ -126,7 +127,8 @@ langConfig.forEach(lang => {
 ```
 以上代码是国际化的过程，最终将会在 `examples/pages/` 目录中生成不同语言的内容。国际化具体内容请参照 [国际化](http://element-cn.eleme.io/#/zh-CN/component/i18n)。
 
-![生成结果](/img/bV5b6B)
+![生成结果](https://upload-images.jianshu.io/upload_images/1987062-5b0354332c689f31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ```js
 // build/bin/version.js
@@ -143,8 +145,7 @@ fs.writeFileSync(path.resolve(__dirname, '../../examples/versions.json'), JSON.s
 ```
 出现这几个版本号的原因么，看下官网就能发现端倪，应该是几个重要的稳定版本。
 
-![版本号](/img/bV5ozA)
-
+![版本号](https://upload-images.jianshu.io/upload_images/1987062-e863a98c9731821b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 来看下 `build-entry.js` 文件
 ```js
