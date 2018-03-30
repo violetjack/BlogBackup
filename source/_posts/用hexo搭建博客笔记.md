@@ -1,6 +1,6 @@
 ---
 title: 用hexo搭建博客笔记
-data: 2018-02-07
+date: 2018-02-07
 tag: "hexo"
 ---
 
